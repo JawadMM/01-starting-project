@@ -1,9 +1,10 @@
 import React from "react";
 
-const TabButton = (props) => {
+const TabButton = ({children, onClick}) => {
+
   return (
     <li>
-      <button>{props.children}</button>
+      <button onClick={onClick}>{children}</button>
     </li>
   );
 };
